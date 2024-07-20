@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonuSharma|Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/portfolio/portfolio.css" />
+  </head>
+
+  <body>
+    <nav id="nav">
+      <i id="user" class="fa-solid fa-user"></i>
+      <div class="logo">Sonu Sharma</div>
+      <div class="menu">
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
+        <a href="#skills"><i class="fa-solid fa-user"></i> Skills</a>
+        <a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
+      <a href="#skills"><i class="fa-solid fa-user"></i> Skills</a>
+      <a href="#contact"><i class="fa-solid fa-address-book"></i>Contact</a>
+    </div>
+
+    <!-- hero-section -->
+
+    <section class="hero">
+      <div class="left-side">
+        <div class="left-side-text">
+          <h1>HI THERE! 👋</h1>
+          <p id="profession">Front End Developer</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique,
+            delectus maxime tempora asperiores dolorum sapiente placeat tempore
+            obcaecati quaerat perspiciatis, illo recusandae ratione ipsum eius
+            fugit. A eius sunt omnis enim alias quis pariatur atque reiciendis
+            adipisci quo, unde non, aperiam tenetur nemo labore nihil
+            necessitatibus, totam dignissimos illum qui?
+          </p>
+          <button id="bttn1">
+            <i class="fa-solid fa-address-book"></i> Contact me
+          </button>
+          <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank"
+              ><img src="/image/instagram portfolio.png" alt="Instagram"
+            /></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><img src="/image/linkdkin portfolio.png" alt="LinkedIn"
+            /></a>
+            <a href="https://www.github.com" target="_blank"
+              ><img
+                src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
+                alt="GitHub"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <img
+          src="/image/indomay32-removebg-preview.png"
+          alt="Illustration"
+          class="hero-image"
+        />
+      </div>
+    </section>
+
+    <!-- about-section -->
+    <section class="about" id="target">
+      <div class="heading-text">
+        <h1>About</h1>
+      </div>
+      <div class="flex">
+        <div class="left-image">
+          <img src="/image/comp.png" alt="" />
+        </div>
+        <div class="right-text">
+          <h2>I'Am Sonu Sharma</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+            similique in aperiam eveniet nisi doloribus vitae dolore magnam amet
+            distinctio quos optio natus, non at ipsa dolores? Beatae similique
+            pariatur laborum, magni officia debitis deserunt voluptates fugiat
+            reiciendis aliquid nostrum id magnam in sint officiis molestias
+            voluptas distinctio non veniam Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. <br /><br />
+            Aliquam sequi labore quam perspiciatis aspernatur quas? Nobis enim
+            veniam eos quod? Quis provident ducimus tempora reprehenderit quasi
+            quas delectus aperiam porro ex praesentium, accusamus facilis amet
+            maxime, commodi ut ad et aliquam. Vero minima consectetur, natus
+            quae harum reprehenderit perferendis accusamus.
+          </p>
+          <!-- <button id="Hire">Hire me</button> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills-section -->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+    
+        <div class="skills__container">
+          <div class="skill">
+            <div class="skill__name">HTML</div>
+            <div class="skill__bar">
+              <div class="skill__level" id="H" data-skill-level="95%">95%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__name">CSS</div>
+            <div class="skill__bar">
+              <div class="skill__level" id="C" data-skill-level="85%">85%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__name">JavaScript</div>
+            <div class="skill__bar">
+              <div class="skill__level"  id="D" data-skill-level="80%">80%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__name">Photoshop</div>
+            <div class="skill__bar">
+              <div class="skill__level" id="E"data-skill-level="75%">75%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- 
+      contact-section -->
+      <section><div class="form-container">
+        <form id="contactForm">
+            <h2>Connect with me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="number">Phone number:</label>
+            <input type="number" id="number" name="number" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p>Your response has been successfully submitted!</p>
+        </div>
+    </div>
+  </section>
+
+
+    <!-- footer-section -->
+<section>
+    <div class="footer">
+      <p>@Sonu Sharma</p>
+      <a href="https://www.instagram.com/yourusername" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/yourusername" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+      </a>
+  </div>
+</section>
+
+    <script src="/portfolio/portfolio.js"></script>
+  </body>
+</html>
